@@ -7,7 +7,7 @@
     $name = htmlentities($_POST['username']);
     $pass = htmlentities($_POST['password']);
 
-    $sql = "SELECT * from account where user='".$name."' AND password='".$pass."' 
+    $sql = "SELECT * from USERACCOUNT where username='".$name."' AND password='".$pass."' 
             limit 1";
 
     $result = mysqli_query($conn,$sql);
