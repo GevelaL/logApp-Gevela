@@ -54,6 +54,8 @@
       </label>
     </div>
     <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+    <a href="login.php">AdminAccess</a>
+    
   </form>
 </div>
 <?php include('inc/footer.php'); ?>
