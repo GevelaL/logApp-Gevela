@@ -23,14 +23,14 @@
         require('config/config.php');
         require('config/db.php');
 
-        $sql = "SELECT id,lastname, firstname,address,logdt from person";
+        $sql = "SELECT pid,lastname, firstname,address,logdt from PERSON";
         $result = mysqli_query($conn,$sql) or die("database error:".mysqli_error($conn));
         ?>
 
                 <tbody>
                 <?php while($row = mysqli_fetch_assoc($result)){?>
-                            <tr id="<?php echo $row['id']?>">
-                            <td><?php echo $row['id'];?></td>
+                            <tr id="<?php echo $row['pid']?>">
+                            <td><?php echo $row['pid'];?></td>
                             <td><?php echo $row['lastname'];?></td>
                             <td><?php echo $row['firstname'];?></td>
                             <td><?php echo $row['address'];?></td>
