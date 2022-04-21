@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 	require('config/config.php');
   require('config/db.php');
 
